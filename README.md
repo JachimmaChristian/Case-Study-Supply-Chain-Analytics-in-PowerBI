@@ -5,4 +5,6 @@ In this project, I performed a Make vs Buy analysis in PowerBI. Before I dive in
 Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer.
 
 ## What is Make vs Buy?
-Make vs Buy decision is choosing either to create a product in house or to purchase it from an external supplier.
+Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier.
+
+##The Problem
