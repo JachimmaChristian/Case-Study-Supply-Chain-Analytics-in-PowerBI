@@ -9,5 +9,6 @@ The problem I worked on in this case study was to analytically determine a Make 
 ## Datasets and Data Model
 The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results.
 
-![](supply chain1.png)
+![supply chain model](https://github.com/JachimmaChristian/PowerBI-Case-Studies/assets/127158037/2dcb382a-0355-4fd3-ad74-d349a8d29340)
+
 
