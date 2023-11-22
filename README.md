@@ -7,4 +7,6 @@ Supply Chain is the network of individuals and companies that are involved in ma
 ## What is Make vs Buy?
 Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier.
 
-##The Problem
+## The Problem
+The problem I worked on in this case study was to analytically determine a make versus buy decision for a fictitious company that sells replacement parts for industrial pizza ovens. My task was to calculate the full cost of the Make and Buy Options so that the business could make an informed decision. 
+
