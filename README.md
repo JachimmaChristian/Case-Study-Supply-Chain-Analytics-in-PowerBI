@@ -11,4 +11,7 @@ The other analysts on the team started a PowerBI file by loading the data and cr
 
 ![supply chain model](https://github.com/JachimmaChristian/PowerBI-Case-Studies/assets/127158037/2dcb382a-0355-4fd3-ad74-d349a8d29340)
 
+## Data Transformation
+The Quotes dataset is the supplier's price commitments for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses'. A Quote is specific to a product, volume and supplier. 
 
+We begin our transformation here by setting the volume column default summarization to 'Don't summarize' as powerbi will automatically sum it up as its a numeric field.
