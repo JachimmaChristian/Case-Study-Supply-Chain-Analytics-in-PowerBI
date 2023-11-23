@@ -15,3 +15,13 @@ The other analysts on the team started a PowerBI file by loading the data and cr
 The Quotes dataset is the supplier's price commitments for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses'. A Quote is specific to a product, volume and supplier. 
 
 We begin our transformation here by setting the volume column default summarization to 'Don't summarize' as powerbi will automatically sum it up as its a numeric field.
+
+Lets look at selecting a supplier, supplier selection is an important part in the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision making process.
+
+Unit cost refers to the cost of purchasing an additional unit and includes the manufacturer's raw material cost, production costs, and profit.
+
+Extended cost represents the cost paid for the products only and does not include one-time expenses. Extended cost is the number of units purchased multiplied by the unit cost.
+
+Non recurring cost is a one time cost that must be paid to facilitate production.
+
+Full cost represents the total amount a company must pay to buy a certain quantity of products. Full cost is the sum of the extended cost and the non-recurring expenses.
