@@ -29,3 +29,6 @@ Full cost represents the total amount a company must pay to buy a certain quanti
 ![adding new columns to the Quotes table](supplychain2.png)
 
 Continuing in our data transformation exercise I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
+
+## Data Visualization
+For our visualization, our manager has requested a report that shows 
