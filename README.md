@@ -9,7 +9,7 @@ The problem I worked on in this case study was to analytically determine a Make 
 ## Datasets and Data Model
 The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results.
 
-![supply chain model](https://github.com/JachimmaChristian/PowerBI-Case-Studies/assets/127158037/2dcb382a-0355-4fd3-ad74-d349a8d29340)
+![supply chain model](supplychain1.png)
 
 ## Data Transformation
 The Quotes dataset is the supplier's price commitments for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses'. A Quote is specific to a product, volume and supplier. 
@@ -26,6 +26,6 @@ Non-recurring cost is a one-time cost that must be paid to facilitate production
 
 Full cost represents the total amount a company must pay to buy a certain quantity of products. Full cost is the sum of the extended cost and the non-recurring expenses.
 
-![supply chain2](https://github.com/JachimmaChristian/PowerBI-Case-Studies/assets/127158037/9b9d4b43-11cc-4e00-879b-876bd4f20576)
+![adding new columns to the Quotes table](supplychain2.png)
 
 Continuing in our data transformation exercise I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
