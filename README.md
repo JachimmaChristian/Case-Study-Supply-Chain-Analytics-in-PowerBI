@@ -26,4 +26,6 @@ Non-recurring cost is a one-time cost that must be paid to facilitate production
 
 Full cost represents the total amount a company must pay to buy a certain quantity of products. Full cost is the sum of the extended cost and the non-recurring expenses.
 
+![supply chain2](https://github.com/JachimmaChristian/PowerBI-Case-Studies/assets/127158037/9b9d4b43-11cc-4e00-879b-876bd4f20576)
+
 Continuing in our data transformation exercise I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
