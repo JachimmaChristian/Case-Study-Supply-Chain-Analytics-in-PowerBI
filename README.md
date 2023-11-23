@@ -1,7 +1,7 @@
 # Supply Chain Analytics in PowerBI
 In this project, I performed a Make vs Buy analysis in PowerBI. Before I dive into the project let me explain Supply Chain  and what Make vs Buy means so you'll be properly carried along.
 
-Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way lets dive right in!
+Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way let's dive right in!
 
 ## The Problem
 The problem I worked on in this case study was to analytically determine a Make versus Buy decision for a fictitious company Tanate Industries that sells replacement parts for industrial pizza ovens. My task was to calculate the full cost of the Make and Buy Options so that the business could make an informed decision.
@@ -16,7 +16,7 @@ The Quotes dataset is the supplier's price commitments for certain products and 
 
 We begin our transformation here by setting the volume column default summarization to 'Don't summarize' as PowerBI will automatically sum it up as its a numeric field.
 
-Let's look at selecting a supplier, supplier selection is an important part in the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision-making process.
+Let's look at selecting a supplier, supplier selection is an important part of the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision-making process.
 
 Unit cost refers to the cost of purchasing an additional unit and includes the manufacturer's raw material cost, production costs, and profit.
 
@@ -35,4 +35,6 @@ For our first visualization, our manager has requested a report that shows:
 
 The supplier name with the lowest full cost for a part number and quote volume combination.
 
-Visibility to the all of the other supplier quotes and full cost for the part number. 
+Visibility to all of the other supplier quotes and full cost for the part number. 
+
+![](supplychain3.png)
