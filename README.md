@@ -38,3 +38,5 @@ The supplier name with the lowest full cost for a part number and quote volume c
 Visibility to all of the other supplier quotes and full cost for the part number. 
 
 ![](supplychain3.png)
+
+The above is a supplier selection report and it shows a card visual with the name of the supplier with the lowest full cost, with two slicers for volume and part number and a stacked bar chart with the title "Cost Breakdown" that displays the extended cost and non_recurring cost for the lowest cost supplier only, as well as other visuals( the table and the line charts) that give information on all of the other supplier quotes.
