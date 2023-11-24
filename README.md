@@ -26,19 +26,21 @@ Non-recurring cost is a one-time cost that must be paid to facilitate production
 
 Full cost represents the total amount a company must pay to buy a certain quantity of products. Full cost is the sum of the extended cost and the non-recurring expenses.
 
-![adding new columns to the Quotes table](supplychain2.png)
-
 Continuing in our data transformation exercise I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
+
+![adding new columns to the Quotes table](supplychain2.png)
 
 We've seen the full cost for the quoted minimum production volumes but in reality, it's unlikely to order exactly the number of products quoted, what happens if our company decides to order a volume that is different from the few points quoted? Let's fix that!
 
 Using DAX, I created a scenario volume parameter that ranged from 1000 to 100,000 with increments of 500 and a default value of 15,000, I also used an iterative function (MINX) to create a "Scenario Full Cost" measure in the scenario volume table that calculates the minimum full cost for the given Scenario Volume Parameter, and using the Filter() function I made sure to filter the Quotes table to include only the quotes where the Scenario Volume Value is greater or equal to the quoted volume.
+Scenario Volume Parameter                  | Scenario Full Cost Measure
+:--------------------------------:|:-------------------------:
+![](supplychain4.png)             | ![](supplychain5.png)
 
-:...............................: | :..............................:
-![](supplychain4.png)               | ![](supplychain5.png)
+
 
 ## Data Visualization
-For our first visualization, our manager has requested a report that shows: 
+For our visualization, our manager has requested a report that shows: 
 
 The supplier name with the lowest full cost for a part number and quote volume combination.
 
@@ -47,3 +49,10 @@ Visibility to all of the other supplier quotes and full cost for the part number
 ![](supplychain3.png)
 
 The above is a supplier selection report and it shows a card visual with the name of the supplier with the lowest full cost, with two slicers for volume and part number and a stacked bar chart with the title "Cost Breakdown" that displays the extended cost and non_recurring cost for the lowest cost supplier only, as well as other visuals( the table and the line charts) that give information on all of the other supplier quotes.
+
+The finance team is interested in the breakdown between the non-recurring expenses for cash flow reasons. They would like the scenario planner to show the breakdown of those costs.
+
+## Recommendation
+Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
+
+I'll recommend for the team to order 50,000 or slightly more because the full cost is actually less expensive once you cross the 50,000 unit threshhold.  
