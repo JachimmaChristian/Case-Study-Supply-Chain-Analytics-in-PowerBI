@@ -34,7 +34,8 @@ We've seen the full cost for the quoted minimum production volumes but in realit
 
 Using DAX, I created a scenario volume parameter that ranged from 1000 to 100,000 with increments of 500 and a default value of 15,000, I also used an iterative function (MINX) to create a "Scenario Full Cost" measure in the scenario volume table that calculates the minimum full cost for the given Scenario Volume Parameter, and using the Filter() function I made sure to filter the Quotes table to include only the quotes where the Scenario Volume Value is greater or equal to the quoted volume.
 
-
+:...............................: | :..............................:
+![](supplychain4.png)               | ![](supplychain5.png)
 
 ## Data Visualization
 For our first visualization, our manager has requested a report that shows: 
