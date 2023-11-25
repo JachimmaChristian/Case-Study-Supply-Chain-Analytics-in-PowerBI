@@ -16,7 +16,7 @@ The Quotes dataset is our main table of interest for analyzing the Buy option. A
 
 We begin by setting the volume column's default summarization to 'Don't summarize' as PowerBI will automatically sum it up as its a numeric field.
 
-Let's look at selecting a supplier, supplier selection is an main part of the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision-making process.
+Let's look at selecting a supplier, supplier selection is a crucial part of the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision-making process.
 
 Unit cost refers to the cost of purchasing an additional unit and includes the manufacturer's raw material cost, production costs, and profit.
 
@@ -26,11 +26,11 @@ Non-recurring cost is a one-time cost that must be paid to facilitate production
 
 Full cost represents the total amount a company must pay to buy a certain quantity of products. Full cost is the sum of the extended cost and the non-recurring expenses.
 
-Continuing in our case study analyisis I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
+Continuing in our case study analysis, I created two new columns (Extended cost and Full cost) in the Quotes Dataset because we need the full cost values in order to inform our purchasing decision. I formatted the newly created columns to currency with 2 decimal places and set the default summarization to 'Don't summarise'.
 
 ![adding new columns to the Quotes table](supplychain2.png)
 
-Our manager had requested a report that shows: 
+Our manager requested a report that shows: 
 
 The supplier name with the lowest full cost for a part number and quote volume combination.
 
@@ -47,9 +47,21 @@ Scenario Volume Parameter                  | Scenario Full Cost Measure
 :--------------------------------:|:-------------------------:
 ![](supplychain4.png)             | ![](supplychain5.png)
 
+
 The finance team is interested in the breakdown between the non-recurring expenses for cash flow reasons. They would like the scenario planner to show the breakdown of those costs.
+
+
+![](supplychain6.png)
+
+The report shows how the full cost for each supplier changes across all scenario volumes as well as the breakdown for the non-recurring expenses and I added a constant line to show where the scenario volume parameter falls in the range of potential values.
+
+The supply chain team was impressed by the scenario planner tool and has requested some enhancements:
+
+They want to see the lowest-cost supplier name prominently on the page 
+
+They only want to see results relevant to their own project.
 
 ## Recommendation
 Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
 
-I'll recommend for the team to order 50,000 or slightly more because the full cost is actually less expensive once you cross the 50,000 unit threshhold.  
+I'll recommend that the team order 50,000 or slightly more because the full cost is actually less expensive once you cross the 50,000 unit threshold.  
