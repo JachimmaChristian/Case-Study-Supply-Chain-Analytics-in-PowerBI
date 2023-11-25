@@ -56,10 +56,15 @@ The finance team is interested in the breakdown between the non-recurring expens
 The report shows how the full cost for each supplier changes across all scenario volumes as well as the breakdown for the non-recurring expenses and I added a constant line to show where the scenario volume parameter falls in the range of potential values.
 
 The supply chain team was impressed by the scenario planner tool and has requested some enhancements:
-
 They want to see the lowest-cost supplier name prominently on the page 
-
 They only want to see results relevant to their own project.
+
+I adjusted the scenario planner report to meet the demands of the supply chain department and added row-level security so that each role can only see projects related to their specific project name.
+
+Updated scenario planner               | Adding row-level security so they only see results relevant to their projects 
+:---------------------:|:---------------------:
+![](supplychain8.png)  | ![](supplychain7.png)
+
 
 ## Recommendation
 Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
