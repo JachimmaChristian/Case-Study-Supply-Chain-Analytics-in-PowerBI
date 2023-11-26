@@ -15,9 +15,9 @@ The other analysts on the team started a PowerBI file by loading the data and cr
 
 **BUY OPTION**
 
-The Quotes dataset is our main table of interest for analyzing the Buy option. A quote is the supplier's price commitments for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses' hence a quote is specific to a product, volume and supplier. 
+The Quotes dataset is our main table of interest for analyzing the Buy option. A quote is the supplier's price commitment for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses' hence a quote is specific to a product, volume and supplier. 
 
-We begin by setting the volume column's default summarization to 'Don't summarize' as PowerBI will automatically sum it up as its a numeric field.
+We begin by setting the volume column's default summarization to 'Don't summarize' as PowerBI will automatically sum it up as it's a numeric field.
 
 Let's look at selecting a supplier, supplier selection is a crucial part of the Buying option, and cost is an important factor to be considered, let me introduce the concepts of unit cost, extended cost and full cost and how they affect the supply chain decision-making process.
 
@@ -80,6 +80,8 @@ Beginning the analysis for the Make option I created a measure "Additional Unit 
 Additional Unit Capacity| Capital Investment Required (Make)| Make Scenario Full Cost
 :---------------------:|:-----------------------:|:---------------------:
 ![](supplychain9.png)|![](supplychain10.png)|![](supplychain11.png)
+
+I went ahead to create other measures, a "Make vs Buy" measure and a "Cost Avoidance" measure that returns the positive impact of either the Make vs Buy option. 
 
 ## Recommendation
 Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
