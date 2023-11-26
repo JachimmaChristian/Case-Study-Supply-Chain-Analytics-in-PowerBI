@@ -12,6 +12,9 @@ The other analysts on the team started a PowerBI file by loading the data and cr
 ![supply chain model](supplychain1.png)
 
 ## Case Study Details
+
+**BUY OPTION**
+
 The Quotes dataset is our main table of interest for analyzing the Buy option. A quote is the supplier's price commitments for certain products and volumes. They say "If you buy X volume of this product you will pay 'Unit Cost' per unit and a one-time cost equal to 'Non-recurring-expenses' hence a quote is specific to a product, volume and supplier. 
 
 We begin by setting the volume column's default summarization to 'Don't summarize' as PowerBI will automatically sum it up as its a numeric field.
@@ -64,6 +67,14 @@ I adjusted the scenario planner report to meet the demands of the supply chain d
 Updated scenario planner               | Adding row-level security so they only see results relevant to their projects 
 :---------------------:|:---------------------:
 ![](supplychain8.png)  | ![](supplychain7.png)
+
+
+**MAKE OPTION**
+Our main table of interest for the Make option is the Internal_Mfg_Resource_Estimates table and just like what we did for the Buy option we'll be calculating the full cost of production for the Make decision. The internal estimates for the Make option are similar to the quotes for the Buy decision and include unit cost and data about the equipment used to manufacture the parts. The unit cost comprises  raw materials, energy cost and labour cost.
+
+The full cost for the make option is similar to the buy option. The full cost is the extended cost plus any incremental investment cost. Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Cost per machine.
+
+
 
 
 ## Recommendation
