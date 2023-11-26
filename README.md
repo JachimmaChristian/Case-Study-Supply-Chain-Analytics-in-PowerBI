@@ -77,8 +77,9 @@ The full cost for the make option is similar to the buy option. The full cost is
 
 Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I created a "Make Scenario - Full Cost" measure
 
-
-
+Additional Unit Capacity| Capital Investment Required (Make)| Make Scenario Full Cost
+:---------------------:|:-----------------------:|:---------------------:
+![](supplychain9.png)|![](supplychain10.png)|![](supplychain11.png)
 
 ## Recommendation
 Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
