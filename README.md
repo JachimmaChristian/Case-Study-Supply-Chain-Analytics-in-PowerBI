@@ -70,9 +70,12 @@ Updated scenario planner               | Adding row-level security so they only 
 
 
 **MAKE OPTION**
+
 Our main table of interest for the Make option is the Internal_Mfg_Resource_Estimates table and just like what we did for the Buy option we'll be calculating the full cost of production for the Make decision. The internal estimates for the Make option are similar to the quotes for the Buy decision and include unit cost and data about the equipment used to manufacture the parts. The unit cost comprises  raw materials, energy cost and labour cost.
 
-The full cost for the make option is similar to the buy option. The full cost is the extended cost plus any incremental investment cost. Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Cost per machine.
+The full cost for the make option is similar to the buy option. The full cost is the extended cost plus any incremental investment cost. 
+
+Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I created a "Make Scenario - Full Cost" measure
 
 
 
