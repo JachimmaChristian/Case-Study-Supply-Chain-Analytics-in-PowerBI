@@ -83,7 +83,8 @@ Additional Unit Capacity| Capital Investment Required (Make)| Make Scenario Full
 
 I went ahead to create other measures, a "Make vs Buy" measure and a "Cost Avoidance" measure that returns the positive impact of either the Make vs Buy option. 
 
-## Recommendation
-Marketing projects the demand for P0604 to be 48,000 units. Based on the scenario planner visualization, what volume would you recommend ordering?
+![](supplychain12.png)
 
-I'll recommend that the team order 50,000 or slightly more because the full cost is actually less expensive once you cross the 50,000 unit threshold.  
+I presented the Make versus Buy analysis tool to the Project Kerfuffle team. They were impressed, but they had some feedback and ideas. The quality team said: "We've had consistent quality issues with Widgetmakers and Ringo Nova on other projects. The cost impact is not negligible!"
+
+I used the Enter Data feature in PowerBI to create a "Supplier Yield" table with all of the suppliers and their corresponding "Yield Rate" as well as modified the "Buy Scenario Full Cost" to include the yield rate.
