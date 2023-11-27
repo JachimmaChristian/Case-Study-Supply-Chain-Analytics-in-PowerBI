@@ -1,4 +1,6 @@
 # Supply Chain Analytics in PowerBI
+View full report in PDF [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE]()
+
 In this case study, I performed a Make vs Buy analysis in PowerBI. Before I dive into the project let me explain Supply Chain  and what Make vs Buy means so you'll be properly carried along.
 
 Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way let's dive right in!
