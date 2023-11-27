@@ -7,10 +7,10 @@ Supply Chain is the network of individuals and companies that are involved in ma
 You can view full report in pdf [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pbix)
 
 ## The Problem
-The problem I worked on in this case study was to analytically determine a Make versus Buy decision for a fictitious company Tanate Industries that sells replacement parts for industrial pizza ovens. My task was to calculate the full cost of the Make and Buy Options so that the business could make an informed decision.
+The problem I worked on in this case study was to develop a model to analytically determine a Make versus Buy decision for a fictitious company Tanate Industries that sells replacement parts for industrial pizza ovens. This PowerBI tool will be useful to calculate the full cost of the Make and Buy Options so that the business can make an informed decision.
 
 ## Datasets and Data Model
-The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results. The Dataset consist of 3 tables, the Quotes table, Internal_Mfg_Resource_Estimates table and the Product Dimanesion table. You can see the model below:
+The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results. The Dataset consist of 3 tables, the Quotes table, Internal_Mfg_Resource_Estimates table and the Product Dimension table. You can see the model below:
 
 ![supply chain model](supplychain1.png)
 
