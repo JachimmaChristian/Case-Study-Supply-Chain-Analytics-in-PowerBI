@@ -1,15 +1,16 @@
 # Supply Chain Analytics in PowerBI
-View full report in PDF [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE]()
 
 In this case study, I performed a Make vs Buy analysis in PowerBI. Before I dive into the project let me explain Supply Chain  and what Make vs Buy means so you'll be properly carried along.
 
 Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way let's dive right in!
 
+You can view full report in pdf [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pbix)
+
 ## The Problem
 The problem I worked on in this case study was to analytically determine a Make versus Buy decision for a fictitious company Tanate Industries that sells replacement parts for industrial pizza ovens. My task was to calculate the full cost of the Make and Buy Options so that the business could make an informed decision.
 
 ## Datasets and Data Model
-The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results. You can see the model below
+The other analysts on the team started a PowerBI file by loading the data and creating a model but they need my help visualizing and interpreting the results. The Dataset consist of 3 tables, the Quotes table, Internal_Mfg_Resource_Estimates table and the Product Dimanesion table. You can see the model below:
 
 ![supply chain model](supplychain1.png)
 
@@ -77,7 +78,7 @@ Our main table of interest for the Make option is the Internal_Mfg_Resource_Esti
 
 The full cost for the make option is similar to the buy option. The full cost is the extended cost plus any incremental investment cost. 
 
-Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I created a "Make Scenario - Full Cost" measure
+Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I called it "Make Scenario Full Cost" measure
 
 Additional Unit Capacity| Capital Investment Required (Make)| Make Scenario Full Cost
 :---------------------:|:-----------------------:|:---------------------:
@@ -90,3 +91,6 @@ I went ahead to create other measures, a "Make vs Buy" measure and a "Cost Avoid
 I presented the Make versus Buy analysis tool to the Project Kerfuffle team. They were impressed, but they had some feedback and ideas. The quality team said: "We've had consistent quality issues with Widgetmakers and Ringo Nova on other projects. The cost impact is not negligible!"
 
 I used the Enter Data feature in PowerBI to create a "Supplier Yield" table with all of the suppliers and their corresponding "Yield Rate" as well as modified the "Buy Scenario Full Cost" to include the yield rate.
+
+View full report in pdf [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pbix)
+
