@@ -1,8 +1,6 @@
 # Supply Chain Analytics in PowerBI
 
-In this case study, I developed a model for effective Make vs Buy supply chain decisions in PowerBI. 
-
-Before I dive into the project let me explain Supply Chain and what Make vs Buy means so you'll be properly carried along.
+In this case study, I created a Make vs Buy analysis tool to calculate costs and analyze production volumes but before I dive into the project let me explain Supply Chain and what Make vs Buy means so you'll be properly carried along.
 
 Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way let's dive right in!
 
@@ -93,6 +91,12 @@ I went ahead to create other measures, a "Make vs Buy" measure and a "Cost Avoid
 I presented the Make versus Buy analysis tool to the Project Kerfuffle team. They were impressed, but they had some feedback and ideas. The quality team said: "We've had consistent quality issues with Widgetmakers and Ringo Nova on other projects. The cost impact is not negligible!"
 
 I used the Enter Data feature in PowerBI to create a "Supplier Yield" table with all of the suppliers and their corresponding "Yield Rate" as well as modified the "Buy Scenario Full Cost" to include the yield rate.
+
+![](supplychain13.png)
+
+The model I created is a great baseline for more complex analysis. We can extend the model to include more cost considerations not covered in this case study, such as salaried employees, more facilities, variable overheads, and freight costs. We can also build in other vital supply chain aspects, such as time and quality. 
+
+Click the link below to view the completed tool:
 
 View full report in pdf [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pdf) or download the PowerBI file [HERE](https://github.com/JachimmaChristian/Case-Study-Supply-Chain-Analytics-in-PowerBI/blob/main/Supply%20chain%20analytics%20dashboard.pbix)
 
