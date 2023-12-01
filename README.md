@@ -1,6 +1,6 @@
 # Supply Chain Analytics in PowerBI
 
-In this case study, I performed a Make vs Buy analysis in PowerBI. Before I dive into the project let me explain Supply Chain  and what Make vs Buy means so you'll be properly carried along.
+In this case study, I developed a model to perform a Make vs Buy analysis in PowerBI. Before I dive into the project let me explain Supply Chain and what Make vs Buy means so you'll be properly carried along.
 
 Supply Chain is the network of individuals and companies that are involved in making a product and delivering it to the consumer and the Make vs Buy decision is choosing either to create a product in-house or to purchase it from an external supplier. Now we have these definitions out of the way let's dive right in!
 
@@ -63,7 +63,7 @@ The report shows how the full cost for each supplier changes across all scenario
 
 The supply chain team was impressed by the scenario planner tool and has requested some enhancements:
 They want to see the lowest-cost supplier name prominently on the page 
-They only want to see results relevant to their own project.
+They only want to see results relevant to their project.
 
 I adjusted the scenario planner report to meet the demands of the supply chain department and added row-level security so that each role can only see projects related to their specific project name.
 
@@ -78,7 +78,7 @@ Our main table of interest for the Make option is the Internal_Mfg_Resource_Esti
 
 The full cost for the make option is similar to the buy option. The full cost is the extended cost plus any incremental investment cost. 
 
-Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I called it "Make Scenario Full Cost" measure
+Beginning the analysis for the Make option I created a measure "Additional Unit Capacity Required" using DAX that calculates excess production demand, I also created another measure "Capital Investment Required (Make)" which is the number of machines required multiplied by the cost of the machine. You should know that the number of machines required is the Additional Unit Capacity Required divided by the Unit Capacity per machine. Now we can calculate the full cost for the make option, I called it the "Make Scenario Full Cost" measure
 
 Additional Unit Capacity| Capital Investment Required (Make)| Make Scenario Full Cost
 :---------------------:|:-----------------------:|:---------------------:
