@@ -1,6 +1,6 @@
 # Supply Chain Analytics in PowerBI
 
-In this case study, I developed a model to perform a Make vs Buy analysis in PowerBI. 
+In this case study, I developed a model for effective Make vs Buy supply chain decisions in PowerBI. 
 
 Before I dive into the project let me explain Supply Chain and what Make vs Buy means so you'll be properly carried along.
 
